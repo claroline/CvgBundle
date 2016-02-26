@@ -26,8 +26,8 @@
                 {% if not footerMessage is empty %}{{ footerMessage|raw }}{% endif %}
                 <span{% if ((footerLogin or footerWorkspaces) and app.security.token is not null) or not footerMessage is empty %} class="pull-right"{% endif %}>
                     {{ 'powered_by' | trans({}, 'platform') }} <a href="http://www.claroline.net">Claroline</a> (v{{ coreVersion }})
-                </span>
-
+            <p class="copyright text-muted small">Copyright &copy; Campus Virtuel en Gestion 2016 - Tous droits réservés</p>
+            </span>
             </p>
         </div>
     </div>
