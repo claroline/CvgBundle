@@ -62,7 +62,7 @@
     font-family: FontAwesome;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-}*/
+}
 .navbar-nav>li.menu-item-has-children:before {
     content: "\f0d7";
     color: #262626;
@@ -99,6 +99,6 @@
     border-right: none;
 }
 .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
-    background-color: #9999cc;
-    color: #ffffff;
+    background-color: lightgrey;
+    color: black;
 }
