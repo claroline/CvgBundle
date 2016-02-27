@@ -2,19 +2,20 @@
 
 {% block content %}
 
-<div class="container-fluid">
+<div class="container-fluid site-text">
     <div class="row col-md-offset-1 col-md-10" style="background-color: lightgoldenrodyellow; text-align: center">
         <h2 class="section-heading" style="color: blue">Online Executive Master in Management</h2>
         <p>Une formation interuniversitaire de haut niveau en management</p>
         <p>Organisée à distance</p>
         <p>Proposée conjointement par</p>
-        <p><strong>HEC Liège (ULg),</br>
-        Solvay Brussels School of Economics and Management (ULB) et</br>
-        Louvain School of Management (UCL)</strong></p>
+        <p><strong>HEC Liège (ULg)</br>
+        Solvay Brussels School of Economics and Management (ULB)</strong></br>
+        &</br>
+        <strong>Louvain School of Management (UCL)</strong></p>
         <p>Couplée à une démarche d’e-accompagnement à l’évolution professionnelle</p>
     </div>
 </div>
-<div class="container-fluid">
+<div class="container-fluid site-text">
     <div class="row col-md-offset-1 col-md-10" style="background-color: lightgreen">
         <div class="col-lg-3" style="background-color: white; margin: 30px">
             <h2 style="text-align: center" class="section-heading">Programme</h2>
@@ -91,30 +92,29 @@
                     </ul>
                 <p>Il est à télécharger ci-dessous et doit être envoyé par email au plus tard pour le 15 février 2015 à l’adresse suivante : cvg@campusvirtuel.be.</p>
             <h3>Entretien de sélection</h3>
-
-                Sur base des dossiers reçus, la responsable scientifique du programme, accompagnée d’un autre membre du corps professoral, fixera avec chaque candidat un entretien de motivation par skype d’environ une heure.
-
-                Les entretiens seront menés entre mi-février et mi-mars. La liste des candidats sélectionnés sera communiquée après la mi-mars.
-                Minerval
-
-                Les droits d’inscription s’élèvent à 6900 euros pour les deux années (conditions FSE : public éligible Région Wallonne). Ils comprennent tous les frais liés à la formation à savoir :
-
-                Accès à la plateforme e-learning
-                Les ressources utiles aux modules
-                L’inscription aux évaluations
-                2 séminaires résidentiels de 2 jours (logement et repas inclus)
-
-                - See more at: http://www.campusvirtuel.be/online/index.php#sthash.gPNEbsxX.dpuf</h3>
-            <p>Récapitulatif des échéances
-
-                Fin-février : Dossier de candidature à envoyer par mail
-                Fin-février à mi-mars : Entretiens de motivation online
-                Mi-mars 2016 : Diffusion de la liste des candidats sélectionnés
-                15 et 16 avril 2016 : Séminaire résidentiel de lancement
-
-                <h3>RAPPEL</h3>
-                <p>A l’issue de votre formation, si vous remplissez toutes les conditions de réussite, vous recevrez un certificat interuniversitaire signé par les recteurs de
-                l’ULB, l’ULg et l’UCL.</br>
+                <p>Sur la base des dossiers reçus, la responsable scientifique du programme, accompagnée d’un autre membre du
+                corps professoral, fixera avec chaque candidat un entretien de motivation par Skype d’environ une heure.</p>
+                <p>Les entretiens seront menés entre mi-février et mi-mars. La liste des candidats sélectionnés sera
+                communiquée après la mi-mars.</p>
+            <h3>Minerval</h3>
+                <p>Les droits d’inscription s’élèvent à 6900 euros pour les deux années (conditions FSE : public éligible
+                Région Wallonne). Ils comprennent tous les frais liés à la formation à savoir:</p>
+                <ul>
+                    <li>Accès à la plateforme e-learning</li>
+                    <li>Les ressources utiles aux modules</li>
+                    <li>L’inscription aux évaluations</li>
+                    <li>2 séminaires résidentiels de 2 jours (logement et repas inclus)</li>
+                </ul>
+            <h3>Récapitulatif des échéances</h3>
+                <ul>
+                    <li><strong>Fin-février</strong>: Dossier de candidature à envoyer par mail</li>
+                    <li><strong>Fin-février à mi-mars</strong>: Entretiens de motivation online</li>
+                    <li><strong>Mi-mars 2016</strong>: Diffusion de la liste des candidats sélectionnés</li>
+                    <li><strong>15 et 16 avril 2016</strong>: Séminaire résidentiel de lancement</li>
+                </ul>
+            <h3>RAPPEL</h3>
+                <p>A l’issue de votre formation, si vous remplissez toutes les conditions de réussite, vous recevrez un
+                    certificat interuniversitaire signé par les recteurs de l’ULB, l’ULg et l’UCL.</br>
                 Il s’agit bien d’un certificat et non d’un diplôme de master reconnu par la Communauté Française.</p>
         </div>
     </div>
@@ -164,10 +164,6 @@
 {% block stylesheets %}
     {{ parent() }}
     <link rel="stylesheet"
-          href="{{ asset('uploads/custom/css/cvg.css') }}"
-          type="text/css"
-    />
-    <link rel="stylesheet"
           href="{{ asset('uploads/custom/css/bootstrap.min.css') }}"
           type="text/css"
     />
@@ -187,7 +183,10 @@
            href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic"
            type="text/css"
     >
-
+    <link rel="stylesheet"
+          href="{{ asset('uploads/custom/css/cvg.css') }}"
+          type="text/css"
+    />
 {% endblock %}
 
 {%  block scripts %}
