@@ -24,12 +24,11 @@
                 {% endif %}
 
                 {% if not footerMessage is empty %}{{ footerMessage|raw }}{% endif %}
-                <span{% if ((footerLogin or footerWorkspaces) and app.security.token is not null) or not footerMessage is empty %} class="pull-right"{% endif %}>
-                    {{ 'powered_by' | trans({}, 'platform') }} <a href="http://www.claroline.net">Claroline</a> (v{{ coreVersion }})
-                </span>
-                <p style="text-align: center" class="copyright text-muted small">Copyright &copy; Campus Virtuel en Gestion -
+                <span {% if ((footerLogin or footerWorkspaces) and app.security.token is not null) or not footerMessage is empty %} class="pull-right"{% endif %}>
+                    {{ 'powered_by' | trans({}, 'platform') }} <a href="http://www.claroline.net">le Consortium Claroline AISBL</a> (v{{ coreVersion }})
+                - Copyright &copy; Campus Virtuel en Gestion -
                 2016 - Tous droits réservés - 35, rue Saint Gilles, 4000 Liège - 04 2327413 - <a href="mailto:cvg@campusvirtuel.be">cvg@campusvirtuel.be</a>
-
+                </span>
             </p>
         </div>
     </div>
