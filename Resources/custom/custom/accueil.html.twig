@@ -3,7 +3,7 @@
 {% block content %}
 
 <div class="container-fluid site-text">
-    <div class="row col-md-offset-1 col-md-10" style="background-color: lightgoldenrodyellow; text-align: center">
+    <div class="row col-xs-12 col-sm-12 col-md-12 col-lg-12" style="background-color: lightgoldenrodyellow; text-align: center">
         <h2 class="section-heading" style="color: blue">Online Executive Master in Management</h2>
         <p>Une formation interuniversitaire de haut niveau en management</p>
         <p>Organisée à distance</p>
@@ -16,7 +16,7 @@
     </div>
 </div>
 <div class="container-fluid site-text">
-    <div class="row col-md-offset-1 col-md-10" style="background-color: lightgreen">
+    <div class="row col-xs-12 col-sm-12 col-md-12 col-lg-12" style="background-color: lightgreen">
         <div class="col-lg-3" style="background-color: white; margin: 30px">
             <h2 style="text-align: center" class="section-heading">Programme</h2>
                 <p>L’Online Executive Master in Management est un programme de formation à distance en management de 2 ans.<p>
@@ -26,25 +26,9 @@
                     <li>Solvay Brussels School of Economics and Management de l’Université Libre de Bruxelles</li>
                     <li>Louvain School of Management de l’Université Catholique de Louvain</li>
                 </ul>
-                C’est un tout nouveau programme que le Campus Virtuel en Gestion a conçu pour cette nouvelle session de formation : le contenu a été revu, l’organisataion repensée.
-                Il vise à développer vos compétences pour être un «Manager de demain», un chef d’orchestre qui se doit de donner la mesure...</p>
-                <h3>APPROCHE COMPÉTENCES</h3>
-                Les modules qui composent le programme ont été construits autour des compétences clés à développer pour évoluer vers une fonction de middle-management et répondre aux enjeux actuels et futurs qu’elle implique.
-                <h3>CONTENU</h3>
-                <p>Le programme est composé de 5 modules de 12 crédits ECTS chacun (le cinquième module est un Business Game final), soit un total de 60 crédits ECTS étalés
-                    sur 2 années:</p>
-                    <ul>
-                        <li><strong>Module 1 - Conduire l’entreprise dans un monde en changement</strong>: Elaborer et développer la stratégie dans un contexte marqué par la "turbulence" : imprévisibilité,
-                            développement technologique incessant, globalisation, nouvelles "règles du jeu" dans tous les domaines.</li>
-                        <li><strong>Module 2 - Piloter le changement et l’innovation</strong>: Répondre aux besoins d’innovation et gérer les dynamiques de changement par une démarche-projet processuelle.</li>
-                        <li><strong>Module 3 - Mesurer, analyser et décider pour créer de la valeur</strong>: Créer de la valeur opérationnelle en donnant du sens à la donnée (analysée sous l’angle financier,
-                            marketing et logistique).</li>
-                        <li><strong>Module 4 - Inspirer, responsabiliser et communiquer</strong>: Développer la capacité du futur manager/leader à susciter l’envie de ses collaborateurs de coopérer en vue
-                            de réaliser la(les) mission(s) de l’organisation.</li>
-                        <li><strong>Module 5 - Manœuvrer de façon systémique et prospective (Business Game)</strong>: Mobiliser les apprentissages de manière transversale et intégrative au travers d’une
-                            immersion virtuelle des participants dans un environnement organisationnel concurrentiel dans lequel ils agissent comme des gestionnaires d’entreprise.</li>
-                    </ul>
-                <p>Voici un descriptif plus détaillé du <a href="#">programme et du contenu des modules</a>.</p>
+                C’est un tout nouveau programme que le Campus Virtuel en Gestion a conçu pour cette nouvelle session
+                de formation : le contenu a été revu, l’organisation repensée. Il vise à développer vos compétences
+                pour être un «Manager de demain», un chef d’orchestre qui se doit de donner la mesure...</p>
         </div>
         <div class="col-lg-4" style="background-color: white; margin: 30px">
             <h2 class="section-heading" style="text-align: center">E-accompagnement</h2>
@@ -121,24 +105,24 @@
 </div>
 <div class="container-fluid">
     <div class="row">
-        <div class="col-lg-offset-1 col-lg-5 col-sm-6">
+        <div class="col-md-6">
             <hr class="section-heading-spacer">
             <div class="clearfix"></div>
             <h2 class="section-heading">Formation organisée par</h2>
         </div>
-        <div class="col-lg-5 col-sm-6">
+        <div class="col-md-6">
             <hr class="section-heading-spacer">
             <div class="clearfix"></div>
             <img src="{{ asset('uploads/custom/images/cvg.jpg') }}" alt="Logo CVG" title="Logo du Campus Virtuel en Gestion">
         </div>
     </div>
     <div class="row">
-        <div class="col-md-offset-1 col-md-5">
+        <div class="col-md-6">
             <hr class="section-heading-spacer">
             <div class="clearfix"></div>
             <h2 class="section-heading">En partenariat avec</h2>
         </div>
-        <div class="col-md-5">
+        <div class="col-md-6">
             <hr class="section-heading-spacer">
             <div class="clearfix"></div>
             <img class="img-responsive" src="{{ asset('uploads/custom/images/logo-school-1.png') }}" alt="Logo HEC" title="Logo de HEC">
@@ -147,12 +131,12 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-lg-offset-1 col-lg-5 col-sm-6">
+        <div class="col-md-6">
             <hr class="section-heading-spacer">
             <div class="clearfix"></div>
             <h2 class="section-heading">Avec le soutien de</h2>
         </div>
-        <div class="col-lg-5 col-sm-6">
+        <div class="col-md-6">
             <hr class="section-heading-spacer">
             <div class="clearfix"></div>
             <img class="img-responsive" src="{{ asset('uploads/custom/images/fsefwb.jpg') }}" alt="Logo FSE & FWB" title="Logo du FSE et de la FWB">
@@ -187,27 +171,4 @@
           href="{{ asset('uploads/custom/css/cvg.css') }}"
           type="text/css"
     />
-{% endblock %}
-
-{%  block scripts %}
-<script type="text/javascript"
-    src="{{ asset('uploads/custom/js/jquery.js') }}">
-</script>
-
-<script type="text/javascript"
-    src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js">
-</script>
-
-<script type="text/javascript"
-    src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js">
-</script>
-
-<script type="text/javascript"
-    src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js">
-</script>
-
-<script type="text/javascript"
-    src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js">
-</script>
-
 {% endblock %}
