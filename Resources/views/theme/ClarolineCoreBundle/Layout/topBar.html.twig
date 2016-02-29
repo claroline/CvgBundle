@@ -1,0 +1,151 @@
+{% extends "ClarolineCoreBundle:Layout:topBarItems.html.twig" %}
+
+
+{% block topBar %}
+    {% if isLogged %}
+        <div id="top_bar" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a href="#"><img src="{{ asset('uploads/custom/images/logo.png') }}" alt="logo.png"
+                       title="Cliquez pour retourner à l'accueil du site CVG" style="max-height: 40px"></a>
+                    <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+<!--
+                    {% if config.getParameter('logo') != "" %}
+                        <a class="navbar-brand logo" href="{{ path('claro_index') }}" title="{{ 'home' | trans({}, "platform") }}">
+                            <img src="{{ asset("") ~ "uploads/logos/" ~ config.getParameter('logo') }}" height="35"
+                                {% if config.getParameter('name') != "" %}alt="{{ config.getParameter('name') }}"{% endif %}>
+                        </a>
+                    {% endif %}
+                    {% if config.getParameter('name') != "" and config.getParameter('nameActive') %}
+                        <a class="navbar-brand" href="{{ path('claro_index') }}">
+                            {{ config.getParameter('name') }}
+                        </a>
+                    {% endif %}
+-->
+                </div>
+                <div class="navbar-collapse collapse">
+                    {% if not isLogged and homeMenu is defined and not homeMenu is empty %}
+                        {% if headerLocale %}
+                            <div class="navbar-form navbar-right clearfix">
+                                <button class="pull-right locale-select btn btn-default">{{ app.request.locale | upper }}</button>
+                            </div>
+                        {% endif %}
+                        <ul class="nav navbar-nav navbar-right">
+                            {% for item in homeMenu %}
+                                {% if item.content.title is defined %}
+                                    <li>
+                                        <a{% if item.content.content is defined %} href="{{ item.content.content | homeLink }}" title="{{ item.content.getTitle() }}"{% endif %} >
+                                            {{ item.content.getTitle() }}
+                                        </a>
+                                    </li>
+                                {% endif %}
+                            {% endfor %}
+                        </ul>
+                    {% else %}
+                        <ul class="nav navbar-nav">
+                            {% if isLogged %}{{ block('leftSide') }}{% endif %}
+                        </ul>
+
+                        <ul class="nav navbar-nav navbar-right">
+                            {{ block('rightSide') }}
+                            {% if isLogged %}
+                                {{ block('logged') }}
+                            {% else %}
+                                {{ block('login') }}
+                            {% endif %}
+
+                            {% if showHelpButton %}
+                                <li>
+                                    <a href="{{ helpUrl }}">
+                                        <i class="fa fa-question-circle"></i>
+                                    </a>
+                                </li>
+                            {% endif %}
+                        </ul>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    {% else %}
+        <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    {# mobile menu #}
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="{{ path('claro_get_content_by_type', {'type': 'accueil'}) }}">
+                        <img src="{{ asset('uploads/custom/images/logo.png') }}" alt="logo.png"
+                         title="Cliquez pour retourner à l'accueil du site CVG" style="max-height: 35px"></a>
+
+                    <!--
+                                   {% if config.getParameter('logo') != "" %}
+                                       <a class="navbar-brand logo" href="{{ path('claro_index') }}" title="{{ 'home' | trans({}, "platform") }}">
+                                           <img src="{{ asset("") ~ "uploads/logos/" ~ config.getParameter('logo') }}" height="35"
+                                                {% if config.getParameter('name') != "" %}alt="{{ config.getParameter('name') }}"{% endif %}>
+                                       </a>
+                                   {% endif %}
+                                   {% if config.getParameter('name') != "" and config.getParameter('nameActive') %}
+                                       <a class="navbar-brand" href="{{ path('claro_index') }}">
+                                           {{ config.getParameter('name') }}
+                                       </a>
+                                   {% endif %}
+                   -->
+
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="{{ path('claro_get_content_by_type', {'type': 'accueil'}) }}" title="Retour à l'accueil du site CVG">Accueil</a></li>
+                        <li><a href="{{ path('claro_get_content_by_type', {'type': 'programme'}) }}"
+                               title="Programme - Cliquez pour obtenir des informations sur le programme">Programme</a></li>
+                        <li><a href="{{ path('claro_get_content_by_type', {'type': 'e-accompagnement'}) }}"
+                               title="e-accompagnement - Cliquez pour obtenir des informations sur l'e-accompagnement">e-Accompagnement</a></li>
+                        <li><a href="{{ path('claro_get_content_by_type', {'type': 'equipe'}) }}">Equipe</a></li>
+                        <li><a href="{{ path('claro_get_content_by_type', {'type': 'inscription'}) }}">Inscription</a></li>
+                        <li><a href="{{ path('claro_get_content_by_type', {'type': 'cvg'}) }}">CVG</a></li>
+                        <li><a href="http://www.campusvirtuel.be/online/-Accueil-.html" target="_blank">Blog</a></li>
+                        <li><a href="{{ path('claro_get_content_by_type', {'type': 'contact'}) }}">Contact</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        {{ block('rightSide') }}
+                        {{ block('login') }}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    {% endif %}
+
+{% endblock %}
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet"
+          href="{{ asset('uploads/custom/css/bootstrap.min.css') }}"
+          type="text/css"
+    />
+    <link rel="stylesheet"
+          href="{{ asset('uploads/custom/css/bootstrap.min.css') }}"
+          type="text/css"
+    >
+{% endblock %}
+
+{%  block javascripts %}
+    {{ parent() }}
+    {#<script type="text/javascript"
+            src="{{ asset('uploads/custom/js/jquery.js') }}">
+    </script>
+
+    <script type="text/javascript"
+            src="{{ asset('uploads/custom/js/jquery-2.1.0.min.js') }}">
+    </script>
+
+    <script type="text/javascript"
+            src="{{ asset('uploads/custom/js/bootstrap.min.js') }}">
+    </script>
+#}
+{% endblock %}

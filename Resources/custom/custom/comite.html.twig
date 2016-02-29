@@ -1,0 +1,59 @@
+{% extends 'ClarolineCoreBundle::layout.html.twig' %}
+
+{% block content %}
+
+    <div id="conteneur" class="container-fluid site-text">
+        <div id="section-id-page">
+            <div class="container-fluid">
+                <h2 class="nom-de-page" style="padding-top:25px; text-align: center">Notre équipe</h2>
+                <h3 style="text-align: center">Le Comité scientifique</h3>
+                <p class="page-location" style="padding-top:15px">
+                    <a href="profs">Corps professoral | </a>
+                    <a href="equipe_projet"> Equipe projet | </a>
+                </p>
+            </div>
+        </div>
+
+    <div class="container site-text" style="padding-top: 30px">
+        <p>Soleo saepe ante oculos ponere, idque libenter crebris usurpare sermonibus, omnis nostrorum imperatorum, omnis exterarum gentium potentissimorumque populorum, omnis clarissimorum regum res gestas, cum tuis nec contentionum magnitudine nec numero proeliorum nec varietate regionum nec celeritate conficiendi nec dissimilitudine bellorum posse conferri; nec vero disiunctissimas terras citius passibus cuiusquam potuisse peragrari, quam tuis non dicam cursibus, sed victoriis lustratae sunt.</p>
+        <p>Postremo ad id indignitatis est ventum, ut cum peregrini ob formidatam haut ita dudum alimentorum inopiam pellerentur ab urbe praecipites, sectatoribus disciplinarum liberalium inpendio paucis sine respiratione ulla extrusis, tenerentur minimarum adseclae veri, quique id simularunt ad tempus, et tria milia saltatricum ne interpellata quidem cum choris totidemque remanerent magistris.</p>
+        <p>Rogatus ad ultimum admissusque in consistorium ambage nulla praegressa inconsiderate et leviter proficiscere inquit ut praeceptum est, Caesar sciens quod si cessaveris, et tuas et palatii tui auferri iubebo prope diem annonas. hocque solo contumaciter dicto subiratus abscessit nec in conspectum eius postea venit saepius arcessitus.</p>
+    </div>
+
+    <!-- PIED DE PAGE -->
+
+
+    <div id="scroll-to-top">
+    <span>
+        <i class="fa fa-arrow-up"></i>
+    </span>
+    </div>
+
+{% endblock %}
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet"
+          href="{{ asset('uploads/custom/css/bootstrap.min.css') }}"
+          type="text/css"
+    />
+    <link rel="stylesheet"
+          href="{{ asset('uploads/custom/css/font-awesome.min.css') }}"
+          type="text/css"
+    />
+    <link rel="stylesheet"
+          href="{{ asset('uploads/custom/css/topbar.css') }}"
+          type="text/css"
+    />
+    <link rel="stylesheet"
+          href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+          type="text/css"
+    >
+    <link  rel="stylesheet"
+           href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic"
+           type="text/css"
+    >
+    <link rel="stylesheet"
+          href="{{ asset('uploads/custom/css/cvg.css') }}"
+          type="text/css"
+    />
+{% endblock %}
