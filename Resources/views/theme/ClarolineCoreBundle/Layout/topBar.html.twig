@@ -6,32 +6,19 @@
         <div id="top_bar" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
             <div class="container-fluid">
                 <div class="navbar-header">
-                    <a href="#"><img src="{{ asset('uploads/custom/images/logo.png') }}" alt="logo.png"
+                    <a href="{{ path('claro_index') }}"><img src="{{ asset('uploads/custom/images/logo.png') }}" alt="logo.png"
                        title="Cliquez pour retourner à l'accueil du site CVG" style="max-height: 40px"></a>
                     <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-<!--
-                    {% if config.getParameter('logo') != "" %}
-                        <a class="navbar-brand logo" href="{{ path('claro_index') }}" title="{{ 'home' | trans({}, "platform") }}">
-                            <img src="{{ asset("") ~ "uploads/logos/" ~ config.getParameter('logo') }}" height="35"
-                                {% if config.getParameter('name') != "" %}alt="{{ config.getParameter('name') }}"{% endif %}>
-                        </a>
-                    {% endif %}
-                    {% if config.getParameter('name') != "" and config.getParameter('nameActive') %}
-                        <a class="navbar-brand" href="{{ path('claro_index') }}">
-                            {{ config.getParameter('name') }}
-                        </a>
-                    {% endif %}
--->
                 </div>
                 <div class="navbar-collapse collapse">
                     {% if not isLogged and homeMenu is defined and not homeMenu is empty %}
                         {% if headerLocale %}
                             <div class="navbar-form navbar-right clearfix">
-                                <button class="pull-right locale-select btn btn-default">{{ app.request.locale | upper }}</button>
+                                            <button class="pull-right locale-select btn btn-default">{{ app.request.locale | upper }}</button>
                             </div>
                         {% endif %}
                         <ul class="nav navbar-nav navbar-right">
