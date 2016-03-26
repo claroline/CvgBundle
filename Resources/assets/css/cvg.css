@@ -22,8 +22,17 @@ h6 {
 }
 .site-text {
     font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 500;
+}
+.mauve {
+    color: #5151a1;
+}
+.orange {
+    color: #f3a300;
+}
+ul.square {
+    list-style-type: square;
 }
 h1 {
     font-size: 2.5em;
