@@ -2,7 +2,13 @@
 
 {% block content %}
 
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+<!-- TOP OF PAGE -->
+
+<div id="page-top"></div>
+
+<!-- CAROUSEL -->
+
+    <div id="myCarousel" class="carousel slide hidden-xs col-md-12" data-ride="carousel">
         <!-- Indicators -->
         <ol class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -14,19 +20,36 @@
         <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
             <div class="item active">
-                <img src={{ asset('uploads/custom/images/tablette.jpg') }} alt="Tablette">
+                <img src={{ asset('uploads/custom/images/tablette.jpg') }}>
+                <div class="carousel-caption">
+                    <h3>Online Executive Master in Management</h3>
+                    <h4>Une formation interuniversitaire de haut niveau en management</h4>
+                </div>
             </div>
 
             <div class="item">
-                <img src={{ asset('uploads/custom/images/tablette.jpg') }} alt="Tablette">
+                <img src={{ asset('uploads/custom/images/tablette.jpg') }}>
+                <div class="carousel-caption">
+                    <h3>Online Executive Master in Management</h3>
+                    <h4>Une formation organisée à distance</h4>
+                </div>
             </div>
 
             <div class="item">
-                <img src={{ asset('uploads/custom/images/tablette.jpg') }} alt="Tablette">
+                <img src={{ asset('uploads/custom/images/tablette.jpg') }}>
+                <div class="carousel-caption">
+                    <h3>Une formation proposée conjointement par</h3>
+                    <h4>HEC Liège (ULg), Solvay Brussels School of Managment (ULB) & Louvain School of
+                    Management (UCL)</h4>
+                </div>
             </div>
 
             <div class="item">
-                <img src={{ asset('uploads/custom/images/tablette.jpg') }} alt="Tablette">
+                <img src={{ asset('uploads/custom/images/tablette.jpg') }}>
+                <div class="carousel-caption">
+                    <h3>Online Executive Master in Management</h3>
+                    <h4>Une formation couplée à une démarche d'e-accompagnement à l'évolution professionnelle</h4>
+                </div>
             </div>
         </div>
 
@@ -144,6 +167,9 @@
 </div>
 <div class="container-fluid">
     <div class="row">
+        <img src="{{ asset('uploads/custom/images/elearning.jpg') }}" width="100%">
+    </div>
+    <div class="row">
         <div class="col-md-6">
             <hr class="section-heading-spacer">
             <div class="clearfix"></div>
@@ -152,38 +178,48 @@
         <div class="col-md-6">
             <hr class="section-heading-spacer">
             <div class="clearfix"></div>
-            <img src="{{ asset('uploads/custom/images/cvg.jpg') }}" alt="Logo CVG" title="Logo du Campus Virtuel en Gestion">
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-6">
-            <hr class="section-heading-spacer">
-            <div class="clearfix"></div>
-            <h2 class="section-heading">En partenariat avec</h2>
+            <h2 class="section-heading">Avec le soutien du Fonds social européen</h2>
         </div>
         <div class="col-md-6">
-            <hr class="section-heading-spacer">
-            <div class="clearfix"></div>
-            <img class="img-responsive" src="{{ asset('uploads/custom/images/logo-school-1.png') }}" alt="Logo HEC" title="Logo de HEC">
-            <img class="img-responsive" src="{{ asset('uploads/custom/images/logo-school-2.png') }}" alt="Logo Solvay" title="Logo de Solvay">
-            <img class="img-responsive" src="{{ asset('uploads/custom/images/logo-school-3.png') }}" alt="Logo LSM" title="Logo de Louvain School of Management">
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-6">
-            <hr class="section-heading-spacer">
-            <div class="clearfix"></div>
-            <h2 class="section-heading">Avec le soutien de</h2>
+            <div class="clearfix">
+                <img src="{{ asset('uploads/custom/images/logo.png') }}" alt="Logo CVG" title="Logo du Campus Virtuel en Gestion">
+            </div>
         </div>
         <div class="col-md-6">
+            <div class="clearfix">
+                <img src="{{ asset('uploads/custom/images/fsefwb.jpg') }}" alt="Logo CVG" title="Logo du Campus Virtuel en Gestion">
+            </div>
+        </div>
+        <div class="col-xs-12">
             <hr class="section-heading-spacer">
             <div class="clearfix"></div>
-            <img class="img-responsive" src="{{ asset('uploads/custom/images/fsefwb.jpg') }}" alt="Logo FSE & FWB" title="Logo du FSE et de la FWB">
+            <h2 class="section-heading">Proposé en partenariat par</h2>
+        </div>
+        <div class="col-md-3">
+            <div class="clearfix"></div>
+            <img src="{{ asset('uploads/custom/images/HEC.jpg') }}" height="150px" alt="Logo HEC" title="Logo de HEC">
+        </div>
+        <div class="col-md-2">
+            <div class="clearfix"></div>
+            <img src="{{ asset('uploads/custom/images/lsm.jpg') }}" height="150px"  alt="Logo Solvay" title="Logo de Solvay">
+        </div>
+        <div class="col-md-7">
+            <div class="clearfix"></div>
+            <img src="{{ asset('uploads/custom/images/SBS.jpg') }}" height="150px" alt="Logo LSM" title="Logo de Louvain School of Management">
         </div>
     </div>
 </div>
+        <!-- PIED DE PAGE -->
+
+
+<div id="scroll-to-top">
+    <span>
+        <i class="fa fa-arrow-up"></i>
+    </span>
+</div>
 
 {% endblock %}
+
 {% block stylesheets %}
     {{ parent() }}
     <link rel="stylesheet"
