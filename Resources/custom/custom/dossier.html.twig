@@ -2,7 +2,7 @@
 
 {% block content %}
 
-<div id="conteneur" class="container-fluid site-text" xmlns="http://www.w3.org/1999/html">
+    <div id="conteneur" class="container-fluid site-text" xmlns="http://www.w3.org/1999/html">
         <div id="section-id-page">
             <div class="container-fluid">
                 <h2 class="nom-de-page" style="padding-top:25px; text-align: center">Inscription</h2>
@@ -14,11 +14,12 @@
                 </p>
             </div>
         </div>
+    </div>
 
     <div class="container site-text" style="padding-top: 30px">
         <p>Pour entrer dans le processus de sélection, vous devez compléter le dossier de candidature. Celui-ci
         comprend :</p>
-            <ul>
+            <ul class="square">
                 <li>Vos données personnelles</li>
                 <li>Votre CV</li>
                 <li>Vos motivations à entamer cette formation à distance en management</li>
@@ -26,11 +27,11 @@
             </ul>
     </div>
 
-    <div id="scroll-to-top">
-    <span>
-        <i class="fa fa-arrow-up"></i>
-    </span>
-    </div>
+    {#<div id="scroll-to-top">#}
+    {#<span>#}
+        {#<i class="fa fa-arrow-up"></i>#}
+    {#</span>#}
+    {#</div>#}
 
 {% endblock %}
 {% block stylesheets %}

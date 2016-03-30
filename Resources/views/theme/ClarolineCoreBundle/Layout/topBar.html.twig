@@ -90,14 +90,19 @@
                     <ul class="nav navbar-nav">
                         <li class="active"><a href="{{ path('claro_get_content_by_type', {'type': 'home'}) }}" title="Retour à l'accueil du site CVG">Accueil</a></li>
                         <li><a href="{{ path('claro_get_content_by_type', {'type': 'programme'}) }}"
-                               title="Programme - Cliquez pour obtenir des informations sur le programme">Programme</a></li>
+                               title="Cliquez pour obtenir des informations sur le programme">Programme</a></li>
                         <li><a href="{{ path('claro_get_content_by_type', {'type': 'e-accompagnement'}) }}"
-                               title="e-accompagnement - Cliquez pour obtenir des informations sur l'e-accompagnement">e-Accompagnement</a></li>
-                        <li><a href="{{ path('claro_get_content_by_type', {'type': 'equipe'}) }}">Equipe</a></li>
-                        <li><a href="{{ path('claro_get_content_by_type', {'type': 'inscription'}) }}">Inscription</a></li>
-                        <li><a href="{{ path('claro_get_content_by_type', {'type': 'cvg'}) }}">CVG</a></li>
-                        <li><a href="http://www.campusvirtuel.be/online/-Accueil-.html" target="_blank">Blog</a></li>
-                        <li><a href="{{ path('claro_get_content_by_type', {'type': 'contact'}) }}">Contact</a></li>
+                               title="Cliquez pour obtenir des informations sur l'e-accompagnement">e-Accompagnement</a></li>
+                        <li><a href="{{ path('claro_get_content_by_type', {'type': 'equipe'}) }}"
+                               title="Cliquez pour obtenir des informations sur notre équipe">Equipe</a></li>
+                        <li><a href="{{ path('claro_get_content_by_type', {'type': 'inscription'}) }}"
+                               title="Cliquez pour obtenir des informations sur l'inscription au programme">Inscription</a></li>
+                        <li><a href="{{ path('claro_get_content_by_type', {'type': 'cvg'}) }}"
+                               title="Cliquez pour obtenir des informations sur le CVG">CVG</a></li>
+                        <li><a href="http://www.campusvirtuel.be/online/-Accueil-.html" target="_blank"
+                               title="Cliquez pour aller sur notre blog">Blog</a></li>
+                        {#<li><a href="{{ path('claro_get_content_by_type', {'type': 'contact'}) }}"#}
+                               {#title="Cliquez pour obtenir des informations sur l'e-accompagnement">Contact</a></li>#}
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         {{ block('rightSide') }}
@@ -123,16 +128,4 @@
 
 {%  block javascripts %}
     {{ parent() }}
-    {#<script type="text/javascript"
-            src="{{ asset('uploads/custom/js/jquery.js') }}">
-    </script>
-
-    <script type="text/javascript"
-            src="{{ asset('uploads/custom/js/jquery-2.1.0.min.js') }}">
-    </script>
-
-    <script type="text/javascript"
-            src="{{ asset('uploads/custom/js/bootstrap.min.js') }}">
-    </script>
-#}
 {% endblock %}
