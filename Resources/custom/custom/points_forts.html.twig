@@ -6,9 +6,9 @@
         <div id="section-id-page" style="padding:15px">
             <div class="container">
                 <h2 class="nom-de-page" style="padding-top:25px; text-align: center">Programme</h2>
-                <h3 style="text-align: center">Approche par compétences</h3>
-                <p class="page-location" style="padding-top:15px">
-                    <a href="points_forts">Points forts | </a>
+                <h3 style="text-align: center">Les points forts de la formation</h3>
+                <p class="page-location" style="padding-top:15px; color: blue; font-weight: bold">
+                    <a href="competences">Approche par compétences | </a>
                     <a href="contenu"> Contenu | </a>
                     <a href="pedagogie"> Pédagogie | </a>
                     <a href="titre"> Titre obtenu | </a>
@@ -19,11 +19,15 @@
     </div>
 
     <div class="container site-text" style="padding-top: 30px">
-        <p>L’OEMM vise à développer vos compétences pour être un <strong class="mauve">« Manager de demain »</strong>,
-            un chef d’orchestre qui se doit de donner la mesure...</p>
-        <p>Les modules qui composent le programme ont été construits autour des compétences clés à développer
-            pour évoluer vers une fonction avec des responsabilités managériales et pouvoir répondre aux enjeux
-            actuels et futurs qu’elle implique.</p>
+        <ul class="square">
+            <li>Une formation (quasi) entièrement à distance</li>
+            <li>Des modules construits et dispensés par des professeurs des 3 Ecoles de Gestion partenaires (HEC Liège,
+                Solvay, LSM), experts de leur domaine</li>
+            <li>Des contenus et activités pédagogiques choisis pour développer les compétences clés du manager</li>
+            <li>Une démarche d’e-accompagnement à l’évolution professionnelle vers une carrière managériale</li>
+            <li>Des activités intégratives en lien avec la réalité concrète des entreprises</li>
+            <li>Des débats, échanges et partages centrés sur vos expériences de terrain</li>
+        </ul>
     </div>
 
     <!-- PIED DE PAGE -->
@@ -35,6 +39,7 @@
     {#</div>#}
 
 {% endblock %}
+
 {% block stylesheets %}
     {{ parent() }}
     <link rel="stylesheet"

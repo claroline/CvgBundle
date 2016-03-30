@@ -2,16 +2,15 @@
 
 {% block content %}
 
-    <div class="container-fluid site-text" xmlns:color="http://www.w3.org/1999/xhtml">
+    <div id="conteneur" class="container-fluid site-text">
         <div id="section-id-page">
             <div class="container-fluid">
                 <h2 class="nom-de-page" style="padding-top:25px; text-align: center">Programme</h2>
-                <h3 style="text-align: center"></h3>
+                <h3 style="text-align: center">Pédagogie</h3>
                 <p class="page-location" style="padding-top:15px">
                     <a href="competences"> Approche par compétences | </a>
                     <a href="points_forts"> Points forts | </a>
                     <a href="contenu"> Contenu | </a>
-                    <a href="pedagogie"> Pédagogie | </a>
                     <a href="titre"> Titre obtenu | </a>
                     <a href="temoignage"> Témoignages d'anciens participants</a>
                 </p>
@@ -20,25 +19,21 @@
     </div>
 
     <div class="container site-text" style="padding-top: 30px">
-        <p>L’<strong class="mauve">Online Executive Master in Management</strong> est un programme de formation
-            de haut niveau à distance en management.</p>
-        <p>Il est organisé grâce au soutien du Fonds social européen et proposé conjointement par</p>
-            <ul>
-                <li><a href="http://www.hec.ulg.ac.be/" target="_blank">HEC Liège</a> - Ecole de Gestion de
-                    l’Université de Liège,</li>
-                <li><a href="http://www.solvay.edu/" target="_blank">Solvay Brussels School of Economics and
-                        Management</a>
-                    de l’Université Libre de Bruxelles,</li>
-                <li><a href="http://www.uclouvain.be/lsm" target="_blank">Louvain School of Management</a> de
-                    l’Université Catholique de Louvain.</li>
-            </ul>
-        <p>Deux alternatives sont possibles:<p>
-            <ul>
-                <li>suivre le <strong class="mauve">programme complet</strong>, constitué de 5 modules et d’une démarche d’e-accompagnement,
-                    débouchant sur un certificat reconnu par les 3 Institutions partenaires;</li>
-                <li>s’inscrire aux <strong class="mauve">modules pris isolément</strong> et obtenir une attestation de réussite, ceux-ci sont
-                    proposés annuellement.</li>
-            </ul>
+        <p>Les professeurs et tuteurs sont issus des 3 Ecoles partenaires et font preuve d’une expertise reconnue
+        dans leur domaine.</p>
+        <p>La formation est organisée <strong class="mauve">totalement à distance</strong> alternant activités, séances synchrones, travail
+        individuel et collaboratif, tutorat, le tout en ligne.</p>
+        <p>L’ensemble des participants est néanmoins réuni en un même endroit à 3 reprises : 2 séminaires résidentiels
+        et la séance finale du Business Game.</p>
+        <p>Le contenu des différents modules est constitué d’un ensemble de <strong class="mauve">ressources</strong>
+        (références bibliographiques, vidéos, syllabi, etc.) et d’une succession d’<strong class="mauve">activités</strong>
+        à réaliser à distance seul, en groupe ou lors des séances synchrones avec le professeur. Le tout permet au
+        participant d’intégrer les concepts clés liés aux thématiques abordées, de développer les compétences qui y
+        sont associées.</p>
+        <p>L’<strong class="mauve">évaluation est contin</strong>ue et se fait au travers de travaux de groupe et individuels. Chaque module comporte
+        également une activité intégrative et transversale.</p>
+        <p>Une <strong class="mauve">plateforme e-learni</strong>ng permet de compiler les ressources, outils, références théoriques nécessaires
+        pour les modules et de centraliser les échanges entre participants, professeurs, tuteurs.</p>
     </div>
 
     <!-- PIED DE PAGE -->
@@ -50,6 +45,7 @@
     {#</div>#}
 
 {% endblock %}
+
 {% block stylesheets %}
     {{ parent() }}
     <link rel="stylesheet"

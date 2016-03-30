@@ -1,0 +1,100 @@
+{% extends 'ClarolineCoreBundle::layout.html.twig' %}
+
+{% block content %}
+
+    <!-- TOP OF PAGE -->
+
+    <div id="page-top"></div>
+
+    <div id="conteneur" class="container-fluid site-text">
+        <div id="section-id-page">
+            <div class="container-fluid">
+                <h2 class="nom-de-page" style="padding-top:25px; text-align: center">Inscription</h2>
+                <h3 style="text-align: center">Modalités d'inscription</h3>
+                <p class="page-location" style="padding-top:15px">
+                    <a href="conditions">Conditions d'admission | </a>
+                    <a href="dossier"> Dossier de candidature | </a>
+                    <a href="entretien"> Entretien de sélection</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container site-text" style="padding-top: 30px">
+        <h3 class="orange">Programme Complet</h3>
+        <p>Les droits d’inscription s’élèvent à <strong class="mauve">6900 euros</strong> (conditions FSE : public
+        éligible Région Wallonne), payables en 2 tranches annuelles.</p>
+        <p>Ils comprennent tous les frais liés à la formation:</p>
+            <ul class="square">
+                <li>Accès à la plateforme e-learning</li>
+                <li>Les ressources utiles aux modules</li>
+                <li>L’inscription aux évaluations</li>
+                <li>2 séminaires résidentiels de 2 jours (logement et repas inclus)</li>
+            </ul>
+        <h4>Récapitulatif des échéances</h4>
+            <ul class="square">
+                <li><strong>Mars</strong>: Dossier de candidature à envoyer par mail</li>
+                <li><strong>Mi-mars à début avril</strong>: Entretiens de motivation online</li>
+                <li><strong>Mi-avril</strong>: Diffusion de la liste des candidats sélectionnés</li>
+                <li><strong>15 et 16 avril 2016</strong>: Séminaire résidentiel de lancement</li>
+            </ul>
+        <h3 class="orange">Modules isolés</h3>
+        <p>Les droits d’inscription s’élèvent à <strong class="mauve">1725 euros</strong> par module.</p>
+        <p>Ils comprennent tous les frais liés à la formation:</p>
+            <ul class="square">
+                <li>Accès à la plateforme e-learning</li>
+                <li>Les ressources utiles au module</li>
+                <li>L’inscription aux évaluations</li>
+            </ul>
+        <h4>Récapitulatif des échéances</h4>
+        <p>Le dossier de candidature doit être envoyé  au plus tard <strong>15 jours</strong> avant le début du module suivi:</p>
+            <ul class="square">
+                <li><strong>Module « Conduire l’entreprise dans un monde en changement »</strong>: démarrage le 17 avril 2016</li>
+                <li><strong>Module « Piloter le changement et l’innovation »</strong>: démarrage le 3 octobre 2016</li>
+                <li><strong>Module « Mesurer, analyser et décider pour créer de la valeur»</strong>: démarrage le 15 février 2017</li>
+                <li><strong>Module « Inspirer, responsabiliser et communiquer »</strong>: démarrage le 16 août 2017</li>
+            </ul>
+        <h5>RAPPEL</h5>
+        <h6 class="orange">Programme complet</h6>
+        <p>A l’issue de votre formation, si vous remplissez toutes les conditions de réussite, vous recevrez un
+        <strong class="mauve">certificat interuniversitaire</strong> signé par les autorités de l’ULg, l’ULB, l’UCL.</p>
+        <p>Il s’agit bien d’un certificat et non d’un diplôme de Master reconnu par la Communauté Française.</p>
+        <h6 class="orange">Module pris isolément</h6>
+        <p>A l’issue de votre formation, si vous remplissez toutes les conditions de réussite, vous recevrez une
+        <strong class="mauve">attestation de réussite</strong> signée par la responsable scientifique du programme.</p>
+    </div>
+
+    <div id="scroll-to-top">
+    <span>
+        <a href="modalites#page-top"><i class="fa fa-arrow-up"></i></a>
+    </span>
+    </div>
+
+{% endblock %}
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet"
+          href="{{ asset('uploads/custom/css/bootstrap.min.css') }}"
+          type="text/css"
+    />
+    <link rel="stylesheet"
+          href="{{ asset('uploads/custom/css/font-awesome.min.css') }}"
+          type="text/css"
+    />
+    <link rel="stylesheet"
+          href="{{ asset('uploads/custom/css/topbar.css') }}"
+          type="text/css"
+    />
+    <link rel="stylesheet"
+          href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+          type="text/css"
+    >
+    <link  rel="stylesheet"
+           href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic"
+           type="text/css"
+    >
+    <link rel="stylesheet"
+          href="{{ asset('uploads/custom/css/cvg.css') }}"
+          type="text/css"
+    />
+{% endblock %}

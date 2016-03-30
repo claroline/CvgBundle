@@ -2,21 +2,31 @@
 
 {% block content %}
 
-    <div class="container-fluid site-text">
+    <div id="conteneur" class="container-fluid site-text">
         <div id="section-id-page">
             <div class="container-fluid">
-                <h2 class="nom-de-page" style="padding-top:25px; text-align: center">Notre équipe</h2>
+                <h2 class="nom-de-page" style="padding-top:25px; text-align: center">Programme</h2>
+                <h3 style="text-align: center">Titre obtenu</h3>
                 <p class="page-location" style="padding-top:15px">
-                    <a href="comite_scientifique">Comité scientifique du programme | </a>
-                    <a href="comite_pilotage"> Comité de pilotage du projet | </a>
-                    <a href="equipe_projet"> Equipe du projet | </a>
-                    <a href="equipe_pedagogique"> Equipe pédagogique</a>
+                    <a href="competences"> Approche par compétences | </a>
+                    <a href="points_forts"> Points forts | </a>
+                    <a href="contenu"> Contenu | </a>
+                    <a href="titre"> Titre obtenu | </a>
+                    <a href="temoignage"> Témoignages d'anciens participants</a>
                 </p>
             </div>
         </div>
     </div>
-
     <div class="container site-text" style="padding-top: 30px">
+        <h3 class="orange">Programme complet</h3>
+            <p>A l’issue de votre formation, si vous remplissez toutes les conditions de réussite, vous recevrez
+                un <strong class="mauve">certificat interuniversitaire</strong> signé par les autorités de l’ULg,
+                l’ULB, l’UCL.</p>
+            <p>Il s’agit bien d’un certificat et non d’un diplôme de Master reconnu par la Communauté Française.</p>
+        <h3 class="orange">Module pris isolément</h3>
+            <p>A l’issue de votre formation, si vous remplissez toutes les conditions de réussite, vous recevrez
+                une <strong class="mauve">attestation de réussite</strong> signée par la responsable scientifique
+                du programme.</p>
     </div>
 
     <!-- PIED DE PAGE -->
@@ -28,7 +38,6 @@
     {#</div>#}
 
 {% endblock %}
-
 {% block stylesheets %}
     {{ parent() }}
     <link rel="stylesheet"
