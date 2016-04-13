@@ -20,6 +20,10 @@ h6 {
     text-transform: none;
     margin: 12px 0;
 }
+
+.carousel {
+    height: 50%;
+}
 .site-text {
     font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 18px;
@@ -82,7 +86,7 @@ h6 {
 .banner {
     padding: 100px 0;
     color: #ffffff;
-    background: url(../images/banner-bg.jpg) no-repeat center center;
+    background: url(../images/elearning.jpg) no-repeat center center;
     background-size: cover;
 }
 .banner h2 {
@@ -132,7 +136,7 @@ p.copyright {
     min-height: 220px;
 }
 #section-id-page {
-    background: url(../images/banner-bg.jpg) 50% 0 no-repeat fixed;
+    background: url(../images/elearning.jpg) 50% 0 no-repeat fixed;
     margin: 0 auto;
     color: #ffffff;
 }
