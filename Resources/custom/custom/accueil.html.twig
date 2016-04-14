@@ -62,21 +62,30 @@
     </div>
 </div>
 
-<div class="main container-fluid site-text" style="margin-top: 50px">
-        <div class="col-lg-4" style="background-color: white">
-            <h3 style="text-align: center; background-color: lightgrey; padding: 30px" class="section-heading orange">Programme</h3>
-            <a href="programme"><img class="img-responsive" src="{{ asset('uploads/custom/images/learning.jpg') }}" alt="join_us.jpg" style="background-color: lightgrey"></a>
+<div class="container-fluid site-text" style="margin-top: 50px">
+    <div class="row" style="background-color: lightgrey">
+        <div class="col-md-4">
+            <h3 style="text-align: center; padding: 30px" class="orange">Programme</h3>
         </div>
-        <div class="col-lg-4" style="background-color: white">
-            <h3 style="text-align: center; background-color: lightgrey; padding: 30px" class="section-heading orange">E-accompagnement</h3>
-            <a href="e-accompagnement" title="Cliquez pour obtenir des informations sur l'e-accompagnement"><img class="img-responsive" src="{{ asset('uploads/custom/images/conseil.jpg') }}" alt="conseil.jpg" style="background-color: lightgrey"></a>
+        <div class="col-md-4">
+            <h3 style="text-align: center; padding: 30px" class="orange">E-accompagnement</h3>
         </div>
-        <div class="col-lg-4" style="background-color: white">
-            <h3 style="text-align: center; background-color: lightgrey; padding: 30px" class="section-heading orange">Inscriptions</h3>
-            <a href="inscription" title="Cliquez pour obtenir des informations sur l'inscription à la formation"><img class="img-responsive" src="{{ asset('uploads/custom/images/join_us.jpg') }}" alt="join_us.jpg" style="background-color: lightgrey"></a>
+        <div class="col-md-4">
+            <h3 style="text-align: center; padding: 30px" class="orange">Inscriptions</h3>
         </div>
-    {#</div>#}
+    </div>
+    <div class="row">
+        <div class="col-lg-4">
+            <a href="programme" title="Cliquez pour obtenir des informations sur le programme"><img class="img-responsive" src="{{ asset('uploads/custom/images/learning.jpg') }}" alt="join_us.jpg"></a>
+    </div>
+        <div class="col-lg-4">
+            <a href="e-accompagnement" title="Cliquez pour obtenir des informations sur l'e-accompagnement"><img class="img-responsive" src="{{ asset('uploads/custom/images/conseil.jpg') }}" alt="conseil.jpg"></a>
+    </div>
+        <div class="col-lg-4">
+            <a href="conditions" title="Cliquez pour obtenir des informations sur l'inscription à la formation"><img class="img-responsive" src="{{ asset('uploads/custom/images/join_us.jpg') }}" alt="join_us.jpg"></a>
+    </div>
 </div>
+
 <div class="container-fluid" style="margin: 50px 20px 30px 20px">
     {#<div class="row" style="margin: 15px">#}
         {#<img src="{{ asset('uploads/custom/images/elearning.jpg') }}" width="100%">#}
@@ -146,10 +155,10 @@
           href="{{ asset('uploads/custom/css/topbar.css') }}"
           type="text/css"
     />
-    {#<link rel="stylesheet"#}
-          {#href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"#}
-          {#type="text/css"#}
-    {#>#}
+    <link rel="stylesheet"
+          href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+          type="text/css"
+    >
     <link  rel="stylesheet"
            href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic"
            type="text/css"
