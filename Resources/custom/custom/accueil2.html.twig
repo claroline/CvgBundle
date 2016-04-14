@@ -1,0 +1,157 @@
+{% extends 'ClarolineCoreBundle::layout.html.twig' %}
+
+{% block content %}
+
+<!-- TOP OF PAGE -->
+
+<div id="page-top"></div>
+
+    <div id="myCarousel" class="carousel slide">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide One');"></div>
+                <div class="carousel-caption">
+                    <h1>A Full-Width Image Slider Template</h1>
+                </div>
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Two');"></div>
+                <div class="carousel-caption">
+                    <h1>Caption 2</h1>
+                </div>
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Three');"></div>
+                <div class="carousel-caption">
+                    <h1>Caption 3</h1>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="icon-next"></span>
+        </a>
+    </div>
+
+    <div class="main container-fluid site-text" style="margin-top: 25px">
+        <div class="col-lg-4" style="background-color: white">
+            <h2 style="text-align: center" class="section-heading orange">Programme</h2>
+            <a href="programme"><img class="img-responsive" src="{{ asset('uploads/custom/images/learning.jpg') }}" alt="join_us.jpg" style="vertical-align: center"></a>
+        </div>
+        <div class="col-lg-4" style="background-color: white">
+            <h2 class="section-heading orange" style="text-align: center">E-accompagnement</h2>
+            <a href="e-accompagnement" title="Cliquez pour obtenir des informations sur l'e-accompagnement"><img class="img-responsive" src="{{ asset('uploads/custom/images/conseil.jpg') }}" alt="conseil.jpg" style="vertical-align: center"></a>
+        </div>
+        <div class="col-lg-4" style="background-color: white">
+            <h2 class="section-heading orange" style="text-align: center">Inscriptions</h2>
+            <a href="inscription" title="Cliquez pour obtenir des informations sur l'inscription à la formation"><img class="img-responsive" src="{{ asset('uploads/custom/images/join_us.jpg') }}" alt="join_us.jpg" style="vertical-align: center"></a>
+        </div>
+</div>
+<div class="container-fluid" style="margin-bottom: 30px">
+    <div class="row" style="margin: 15px">
+        <img src="{{ asset('uploads/custom/images/elearning.jpg') }}" width="100%">
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="clearfix"></div>
+            <h2 class="section-heading">Formation organisée par</h2>
+        </div>
+        <div class="col-md-6">
+            <div class="clearfix"></div>
+            <h2 class="section-heading">Avec le soutien du Fonds social européen</h2>
+        </div>
+        <div class="col-md-6">
+            <div class="clearfix">
+                <img src="{{ asset('uploads/custom/images/logo.png') }}" alt="Logo CVG" title="Logo du Campus Virtuel en Gestion">
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="clearfix">
+                <img src="{{ asset('uploads/custom/images/fsefwb.jpg') }}" alt="Logo CVG" title="Logo du Campus Virtuel en Gestion">
+            </div>
+        </div>
+        <div class="col-xs-12">
+            <div class="clearfix"></div>
+            <h2 class="section-heading">Proposé en partenariat par</h2>
+        </div>
+        <div class="col-md-3">
+            <div class="clearfix"></div>
+            <img src="{{ asset('uploads/custom/images/HEC.jpg') }}" height="150px" alt="Logo HEC" title="Logo de HEC">
+        </div>
+        <div class="col-md-2">
+            <div class="clearfix"></div>
+            <img src="{{ asset('uploads/custom/images/lsm.jpg') }}" height="150px"  alt="Logo Solvay" title="Logo de Solvay">
+        </div>
+        <div class="col-md-7">
+            <div class="clearfix"></div>
+            <img src="{{ asset('uploads/custom/images/SBS.jpg') }}" height="150px" alt="Logo LSM" title="Logo de Louvain School of Management">
+        </div>
+    </div>
+</div>
+
+        <!-- PIED DE PAGE -->
+
+<div id="scroll-to-top">
+    <span>
+        <a href="#page-top"><i class="fa fa-arrow-up"></i></a>
+    </span>
+</div>
+
+{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet"
+          href="{{ asset('uploads/custom/css/bootstrap.min.css') }}"
+          type="text/css"
+    />
+    <link rel="stylesheet"
+          href="{{ asset('uploads/custom/css/font-awesome.min.css') }}"
+          type="text/css"
+    />
+    <link rel="stylesheet"
+          href="{{ asset('uploads/custom/css/topbar.css') }}"
+          type="text/css"
+    />
+    <link rel="stylesheet"
+          href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+          type="text/css"
+    >
+    <link  rel="stylesheet"
+           href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic"
+           type="text/css"
+    >
+    <link rel="stylesheet"
+          href="{{ asset('uploads/custom/css/cvg.css') }}"
+          type="text/css"
+    />
+    <link rel="stylesheet"
+          href="{{ asset('uploads/custom/css/half-slider.css') }}"
+          type="text/css"
+    />
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <script src="{{ asset('uploads/custom/js/bootstrap.js') }}"></script>
+    <script src="{{ asset('uploads/custom/js/jquery.js') }}"></script>
+
+    <!-- Script to Activate the Carousel -->
+    <script>
+        $('.carousel').carousel({
+            interval: 5000 //changes the speed
+        })
+    </script>
+{% endblock %}
