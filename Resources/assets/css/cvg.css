@@ -15,7 +15,6 @@ h4,
 h5,
 h6 {
     font-family: "Lato Regular","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 700;
     font-weight: 600;
     text-transform: none;
     margin: 12px 0;
@@ -140,21 +139,20 @@ p.copyright {
     min-height: 220px;
 }
 #section-id-page {
-    background: url(../images/elearning.jpg) 50% 0 no-repeat fixed;
     margin: 0;
-    color: #ffffff;
+    color: #5151a1;
 }
 .section-id-page .nom-de-page {
     margin: 0;
     padding: 0;
-    color: white;
+    color: #5151a1;
     font-size: 3.4375em;
     font-weight: 900;
     text-align: center;
     text-transform: none;
 }
 .section-id-page .nom-de-page h2 {
-    color: #ffffff;
+    color: #5151a1;
 }
 .page-location {
     margin-bottom: 30px
@@ -162,7 +160,7 @@ p.copyright {
 .page-location,
 .page-location h2,
 .page-location a {
-    color: white;
+    color: #5151a1;
     text-align: center;
 }
 .page-location a{
@@ -175,7 +173,7 @@ p.copyright {
 .page-location a:after {
     position: absolute;
     content: "";
-    background: #1fb5ac;
+    background: #f3a300;
 }
 .page-location a:before {
     width: 100%;
