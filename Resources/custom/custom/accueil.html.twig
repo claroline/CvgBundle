@@ -64,29 +64,41 @@
 
 <div class="container-fluid site-text" style="margin-top: 50px">
     <div class="row" style="background-color: lightgrey">
-        <div class="col-md-4">
+        <div class="hidden-xs hidden-sm col-md-4">
             <h3 style="text-align: center; padding: 30px" class="orange">Programme</h3>
         </div>
-        <div class="col-md-4">
+        <div class="hidden-xs hidden-sm col-md-4">
             <h3 style="text-align: center; padding: 30px" class="orange">E-accompagnement</h3>
         </div>
-        <div class="col-md-4">
+        <div class="hidden-xs hidden-sm col-md-4">
             <h3 style="text-align: center; padding: 30px" class="orange">Inscriptions</h3>
         </div>
     </div>
     <div class="row" style="background-color: white">
-        <div class="col-lg-4">
-            <a href="programme" title="Cliquez pour obtenir des informations sur le programme"><img class="img-responsive" src="{{ asset('uploads/custom/images/learning.jpg') }}" alt="join_us.jpg"></a>
+        <div class="col-xs-12 hidden-md hidden-lg">
+            <h3 style="text-align: center; padding: 30px" class="orange">Programme</h3>
         </div>
         <div class="col-lg-4">
-            <a href="e-accompagnement" title="Cliquez pour obtenir des informations sur l'e-accompagnement"><img class="img-responsive" src="{{ asset('uploads/custom/images/conseil.jpg') }}" alt="conseil.jpg"></a>
+            <a href="{{ path('claro_get_content_by_type', {'type': 'programme'}) }}"
+               title="Cliquez pour obtenir des informations sur le programme"><img class="img-responsive" src="{{ asset('uploads/custom/images/learning.jpg') }}" alt="programme.jpg"></a>
+        </div>
+        <div class="col-xs-12 hidden-md hidden-lg">
+            <h3 style="text-align: center; padding: 30px" class="orange">E-accompagnement</h3>
         </div>
         <div class="col-lg-4">
-            <a href="conditions" title="Cliquez pour obtenir des informations sur l'inscription à la formation"><img class="img-responsive" src="{{ asset('uploads/custom/images/join_us.jpg') }}" alt="join_us.jpg"></a>
+            <a href="{{ path('claro_get_content_by_type', {'type': 'e-accompagnement'}) }}"
+               title="Cliquez pour obtenir des informations sur l'e-accompagnement"><img class="img-responsive" src="{{ asset('uploads/custom/images/conseil.jpg') }}" alt="conseil.jpg"></a>
+        </div>
+        <div class="col-xs-12 hidden-md hidden-lg">
+            <h3 style="text-align: center; padding: 30px" class="orange">Inscriptions</h3>
+        </div>
+        <div class="col-lg-4">
+            <a href="{{ path('claro_get_content_by_type', {'type': 'conditions'}) }}"
+               title="Cliquez pour obtenir des informations sur l'inscription à la formation"><img class="img-responsive" src="{{ asset('uploads/custom/images/join_us.jpg') }}" alt="join_us.jpg"></a>
         </div>
     </div>
     <div class="row" style="background-color: lightgrey">
-        <div class="col-xs-12">
+        <div class="hidden-xs hidden-sm col-md-12">
             <h3 style="text-align: center; padding: 30px" class="orange"></h3>
         </div>
     </div>
@@ -114,9 +126,9 @@
         </div>
         <div class="col-xs-12">
             <p style="text-align: center">
-                <img src="{{ asset('uploads/custom/images/HEC.jpg') }}" height="110px" width="auto" alt="Logo HEC" title="Logo de HEC" style="padding-right: 75px">
-                <img src="{{ asset('uploads/custom/images/lsm.jpg') }}" height="110px" width="auto" alt="Logo Solvay" title="Logo de Louvain School of Management" style="padding-right: 75px">
-                <img src="{{ asset('uploads/custom/images/SBS.jpg') }}" height="110px" width="auto" alt="Logo LSM" title="Logo de Solvay">
+                <img src="{{ asset('uploads/custom/images/HEC.jpg') }}" height="auto" width="30%" alt="Logo HEC" title="Logo de HEC" style="padding-right: 75px">
+                <img src="{{ asset('uploads/custom/images/lsm.jpg') }}" height="auto" width="30%" alt="Logo LSM" title="Logo de Louvain School of Management" style="padding-right: 75px">
+                <img src="{{ asset('uploads/custom/images/SBS.jpg') }}" height="auto" width="30%" alt="Logo SBS" title="Logo de Solvay">
             </p>
         </div>
     </div>
