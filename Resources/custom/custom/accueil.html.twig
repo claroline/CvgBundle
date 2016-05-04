@@ -7,9 +7,10 @@
 <div id="page-top"></div>
 
     <!-- CAROUSEL -->
-<div class="container-fluid">
-    <div id="myCarousel" class="carousel slide hidden-xs col-md-12" data-ride="carousel">
-        <!-- Indicators -->
+
+<div class="container">
+    <div id="myCarousel" class="carousel slide col-xs-12" data-ride="carousel">
+
         <ol class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
             <li data-target="#myCarousel" data-slide-to="1"></li>
@@ -64,90 +65,90 @@
 
 <div class="container-fluid site-text" style="margin-top: 50px">
     <div class="row" style="background-color: lightgrey">
-        <div class="hidden-xs hidden-sm col-md-4">
+        <div class="hidden-xs col-sm-4">
             <a href="{{ path('claro_get_content_by_type', {'type': 'programme'}) }}"
                title="Cliquez pour obtenir des informations sur le programme">
-                <h3 style="text-align: center; padding: 30px" class="orange">Programme</h3>
+                <h4 style="text-align: center; padding: 30px" class="orange">Programme</h4>
             </a>
         </div>
-        <div class="hidden-xs hidden-sm col-md-4">
+        <div class="hidden-xs col-sm-4">
             <a href="{{ path('claro_get_content_by_type', {'type': 'e-accompagnement'}) }}"
                title="Cliquez pour obtenir des informations sur l'e-accompagnement">
-                <h3 style="text-align: center; padding: 30px" class="orange">E-accompagnement</h3>
+                <h4 style="text-align: center; padding: 30px" class="orange">E-accompagnement</h4>
             </a>
         </div>
-        <div class="hidden-xs hidden-sm col-md-4">
+        <div class="hidden-xs col-sm-4">
             <a href="{{ path('claro_get_content_by_type', {'type': 'conditions'}) }}"
                title="Cliquez pour obtenir des informations sur l'inscription à la formation">
-                <h3 style="text-align: center; padding: 30px" class="orange">Inscriptions</h3>
+                <h4 style="text-align: center; padding: 30px" class="orange">Inscriptions</h4>
             </a>
         </div>
     </div>
     <div class="row" style="background-color: white">
-        <div class="col-xs-12 hidden-md hidden-lg">
+        <div class="col-xs-12 hidden-sm hidden-md hidden-lg" style="background-color: lightgrey">
             <a href="{{ path('claro_get_content_by_type', {'type': 'programme'}) }}"
                title="Cliquez pour obtenir des informations sur le programme">
-                <h3 style="text-align: center; padding: 30px" class="orange">Programme</h3>
+                <h4 style="text-align: center; padding: 30px" class="orange">Programme</h4>
             </a>
         </div>
-        <div class="col-lg-4">
+        <div class="col-sm-4">
             <a href="{{ path('claro_get_content_by_type', {'type': 'programme'}) }}"
                title="Cliquez pour obtenir des informations sur le programme"><img class="img-responsive" src="{{ asset('uploads/custom/images/learning.jpg') }}" alt="programme.jpg"></a>
         </div>
-        <div class="col-xs-12 hidden-md hidden-lg">
+        <div class="col-xs-12 hidden-sm hidden-md hidden-lg" style="background-color: lightgrey">
             <a href="{{ path('claro_get_content_by_type', {'type': 'e-accompagnement'}) }}"
                title="Cliquez pour obtenir des informations sur l'e-accompagnement">
-                <h3 style="text-align: center; padding: 30px" class="orange">E-accompagnement</h3>
+                <h4 style="text-align: center; padding: 30px" class="orange">E-accompagnement</h4>
             </a>
         </div>
-        <div class="col-lg-4">
+        <div class="col-sm-4">
             <a href="{{ path('claro_get_content_by_type', {'type': 'e-accompagnement'}) }}"
                title="Cliquez pour obtenir des informations sur l'e-accompagnement"><img class="img-responsive" src="{{ asset('uploads/custom/images/conseil.jpg') }}" alt="conseil.jpg"></a>
         </div>
-        <div class="col-xs-12 hidden-md hidden-lg">
+        <div class="col-xs-12 hidden-sm hidden-md hidden-lg" style="background-color: lightgrey">
             <a href="{{ path('claro_get_content_by_type', {'type': 'conditions'}) }}"
                title="Cliquez pour obtenir des informations sur l'inscription à la formation">
-                <h3 style="text-align: center; padding: 30px" class="orange">Inscriptions</h3>
+                <h4 style="text-align: center; padding: 30px" class="orange">Inscriptions</h4>
             </a>
         </div>
-        <div class="col-lg-4">
+        <div class="col-sm-4">
             <a href="{{ path('claro_get_content_by_type', {'type': 'conditions'}) }}"
                title="Cliquez pour obtenir des informations sur l'inscription à la formation"><img class="img-responsive" src="{{ asset('uploads/custom/images/join_us.jpg') }}" alt="join_us.jpg"></a>
         </div>
     </div>
     <div class="row" style="background-color: lightgrey">
-        <div class="hidden-xs hidden-sm col-md-12">
+        <div class="col-md-12">
             <h3 style="text-align: center; padding: 30px" class="orange"></h3>
         </div>
     </div>
 </div>
 
-<div class="container-fluid" style="margin: 50px 20px 30px 20px">
-    {#<div class="row" style="margin: 15px">#}
-        {#<img src="{{ asset('uploads/custom/images/elearning.jpg') }}" width="100%">#}
-    {#</div>#}
+<div class="container">
     <div class="row" style="margin-top: 50px">
         <div class="col-md-6">
-            {#<hr class="section-heading-spacer">#}
             <h4 class="section-heading">Formation organisée par</h4>
-            <img src="{{ asset('uploads/custom/images/logo.png') }}" alt="Logo CVG" title="Logo du Campus Virtuel en Gestion">
+            <img src="{{ asset('uploads/custom/images/logo.png') }}" width="100%" alt="Logo CVG" title="Logo du Campus Virtuel en Gestion">
         </div>
         <div class="col-md-6">
-            {#<hr class="section-heading-spacer">#}
             <h4 class="section-heading">Avec le soutien du Fonds social européen</h4>
-            <img src="{{ asset('uploads/custom/images/fsefwb.jpg') }}" alt="Logo Fonds social européen" title="Logo du Fonds social européen">
+            <img src="{{ asset('uploads/custom/images/fsefwb.jpg') }}" width="100%" alt="Logo Fonds social européen" title="Logo du Fonds social européen">
         </div>
+    </div>
+    <div class="row" style="margin-top: 50px">
         <div class="col-xs-12">
-            {#<hr class="section-heading-spacer">#}
             <div class="clearfix"></div>
-            <h4 class="section-heading" style="text-align: center">Proposée en partenariat par</h4>
+            <h4 class="section-heading" style="text-align: left">Proposée en partenariat par</h4>
         </div>
-        <div class="col-xs-12">
-            <p style="text-align: center">
-                <img src="{{ asset('uploads/custom/images/HEC.jpg') }}" height="auto" width="30%" alt="Logo HEC" title="Logo de HEC" style="padding-right: 75px">
-                <img src="{{ asset('uploads/custom/images/lsm.jpg') }}" height="auto" width="30%" alt="Logo LSM" title="Logo de Louvain School of Management" style="padding-right: 75px">
-                <img src="{{ asset('uploads/custom/images/SBS.jpg') }}" height="auto" width="30%" alt="Logo SBS" title="Logo de Solvay">
-            </p>
+    </div>
+    <div class="row" style="margin-top: 50px; vertical-align: bottom">
+        <div class="col-xs-12 col-md-4" >
+                <img src="{{ asset('uploads/custom/images/HEC.jpg') }}" width="100%" alt="Logo HEC" title="Logo de HEC" style="padding-right: 75px">
+        </div>
+        <div class="col-xs-12 col-md-4">
+                <img src="{{ asset('uploads/custom/images/lsm.jpg') }}" width="100%" alt="Logo LSM" title="Logo de Louvain School of Management" style="padding-right: 75px">
+        </div>
+        <div class="col-xs-12 col-md-4">
+                <img src="{{ asset('uploads/custom/images/SBS.jpg') }}" width="100%" alt="Logo SBS" title="Logo de Solvay">
         </div>
     </div>
 </div>
@@ -188,8 +189,4 @@
           href="{{ asset('uploads/custom/css/cvg.css') }}"
           type="text/css"
     />
-    {#<link rel="stylesheet"#}
-          {#href="{{ asset('uploads/custom/css/half-slider.css') }}"#}
-          {#type="text/css"#}
-    {#/>#}
 {% endblock %}
