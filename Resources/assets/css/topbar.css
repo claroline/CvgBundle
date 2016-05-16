@@ -14,7 +14,6 @@
     font-size: 0.9375em;
     font-weight: 700;
     padding: 0px 10px 10px 0px;
-    /*padding-bottom: 10px;*/
     position: relative;
     color: #ffffff;
 }
@@ -84,18 +83,15 @@
     color: #262626;
     background-color: #1fb5ac;
 }
-
 .toggle_nav_button {
     display: none;
     color: lightgrey;
     background-color: #ffffff;
     border-radius: 0;
 }
-
 .navbar.navbar-inverse.navbar-fixed-top {
     border-bottom:none;
 }
-
 #top_bar li:not(:last-child) > a, .top-bar li:not(:last-child) > a {
     border-right: none;
 }
